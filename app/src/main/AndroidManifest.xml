@@ -16,7 +16,7 @@
         <activity android:name=".Register.Registration" />
         <activity android:name=".Administrator" />
         <activity android:name=".Teacher" />
-        <activity android:name=".login" />
+
         <activity android:name=".StudentLogin" />
         <activity android:name=".MainActivity">
             <intent-filter>
