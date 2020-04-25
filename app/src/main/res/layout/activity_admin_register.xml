@@ -4,26 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register.RegisterationTeacher">
+    tools:context=".Register.AdminRegister">
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="400dp"
-        android:layout_height="206dp"
+        android:id="@+id/linearLayout5"
+        android:layout_width="407dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.418">
+        app:layout_constraintVertical_bias="0.32999998">
+
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etteachername"
+                android:id="@+id/etadminname"
                 android:layout_width="match_parent"
                 android:layout_height="60sp"
                 android:layout_margin="2sp"
@@ -37,7 +42,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etteacherpassword"
+                android:id="@+id/etadminpassword"
                 android:layout_width="match_parent"
                 android:layout_height="60sp"
                 android:layout_margin="2sp"
@@ -47,7 +52,7 @@
         </ScrollView>
 
         <EditText
-            android:id="@+id/etteachermobilenumber"
+            android:id="@+id/etadminmobilenumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="2sp"
@@ -56,7 +61,7 @@
             android:inputType="phone" />
 
         <EditText
-            android:id="@+id/etteacheremail"
+            android:id="@+id/etadminemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="2sp"
@@ -65,35 +70,24 @@
             android:inputType="textEmailAddress" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="239dp"
-        android:layout_height="46dp"
-        android:text="Teacher Registration"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161" />
-
     <LinearLayout
-        android:layout_width="408dp"
-        android:layout_height="142dp"
+        android:layout_width="400dp"
+        android:layout_height="115dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.89">
 
         <Button
-            android:id="@+id/btnregisterteacher"
+            android:id="@+id/btnregisterAdmin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_marginBottom="1dp"
+            android:layout_weight="2"
             android:text="Sign up"
             android:textSize="20sp" />
 
@@ -102,9 +96,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:layout_weight="2"
             android:text="Main Menu"
             android:textSize="20sp" />
     </LinearLayout>
 
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="371dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:text="ADMIN REGISTER PAGE"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

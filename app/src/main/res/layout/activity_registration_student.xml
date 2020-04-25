@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register.RegistrationStudent">
+    tools:context=".Register.RegistrationStudent"
+    >
+
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="408dp"
-        android:layout_height="255dp"
+        android:layout_width="400dp"
+        android:layout_height="201dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,28 +20,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.418">
 
-        <EditText
-            android:id="@+id/etstudentname"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="60sp"
-            android:layout_margin="2sp"
-            android:ems="10"
-            android:hint="Name"
-            android:inputType="textPersonName" />
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/etstudentpassword"
+            <EditText
+                android:id="@+id/etstudentname"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="2sp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+        </ScrollView>
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="60sp"
-            android:layout_margin="2sp"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etstudentpassword"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="2sp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </ScrollView>
 
         <EditText
             android:id="@+id/etstudentmobilenumber"
             android:layout_width="match_parent"
-            android:layout_height="60sp"
+            android:layout_height="wrap_content"
             android:layout_margin="2sp"
             android:ems="10"
             android:hint="Mobile Number"
@@ -48,7 +60,7 @@
         <EditText
             android:id="@+id/etstudentemail"
             android:layout_width="match_parent"
-            android:layout_height="60sp"
+            android:layout_height="wrap_content"
             android:layout_margin="2sp"
             android:ems="10"
             android:hint="E-mail"
@@ -96,5 +108,9 @@
             android:text="Main Menu"
             android:textSize="20sp" />
     </LinearLayout>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
